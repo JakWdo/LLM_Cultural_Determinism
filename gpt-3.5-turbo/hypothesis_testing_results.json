@@ -1,0 +1,929 @@
+{
+  "model_name": "gpt-3.5-turbo",
+  "hypotheses": {
+    "H1": "Anglocentryczny domyślny: W warunkach neutralnych model przyjmuje profil amerykański",
+    "H2": "Karykaturalne przejmowanie tożsamości: Model przyjmuje skrajne, stereotypowe warianty kultur"
+  },
+  "timestamp": "2025-06-17T11:59:01.617091",
+  "methods": {
+    "anova_eta_squared": {
+      "independent_score": {
+        "model_summary": {
+          "r_squared": 0.8750496194539517,
+          "adj_r_squared": 0.8457643740134716,
+          "f_statistic": 29.880221466213072,
+          "p_value": 3.560385758938073e-23
+        },
+        "anova_table": {
+          "language": {
+            "sum_sq": 2.5442222222222086,
+            "df": 1,
+            "f": 18.329397638583057,
+            "p": 6.349979977606373e-05,
+            "eta_squared": 0.035785393908137404,
+            "percent_variance_explained": 3.5785393908137406
+          },
+          "identity": {
+            "sum_sq": 40.050000000000004,
+            "df": 3,
+            "f": 96.17770662397442,
+            "p": 1.1360015325364272e-23,
+            "eta_squared": 0.5633175488771158,
+            "percent_variance_explained": 56.33175488771158
+          },
+          "strength": {
+            "sum_sq": 5.408000000000002,
+            "df": 1,
+            "f": 38.9609765859516,
+            "p": 3.892104879510034e-08,
+            "eta_squared": 0.07606545079469272,
+            "percent_variance_explained": 7.606545079469272
+          },
+          "language:identity": {
+            "sum_sq": 2.995777777777775,
+            "df": 3,
+            "f": 7.194183176572606,
+            "p": 0.00030953995019664067,
+            "eta_squared": 0.0421366840139403,
+            "percent_variance_explained": 4.21366840139403
+          },
+          "language:strength": {
+            "sum_sq": 0.03200000000000025,
+            "df": 1,
+            "f": 0.23053832299379814,
+            "p": 0.6327619996744834,
+            "eta_squared": 0.00045009142482067035,
+            "percent_variance_explained": 0.045009142482067034
+          },
+          "identity:strength": {
+            "sum_sq": 10.803999999999997,
+            "df": 3,
+            "f": 25.945167100260157,
+            "p": 4.2239515799637345e-11,
+            "eta_squared": 0.15196211730507758,
+            "percent_variance_explained": 15.196211730507759
+          },
+          "language:identity:strength": {
+            "sum_sq": 0.37911111111111306,
+            "df": 3,
+            "f": 0.9104129144153208,
+            "p": 0.4410344024957532,
+            "eta_squared": 0.005332333130167094,
+            "percent_variance_explained": 0.5332333130167094
+          },
+          "Residual": {
+            "sum_sq": 8.883555555555553,
+            "df": 64,
+            "f": null,
+            "p": null,
+            "eta_squared": 0.12495038054604841,
+            "percent_variance_explained": 12.49503805460484
+          }
+        },
+        "effect_sizes": {
+          "language": {
+            "eta_squared": 0.035785393908137404,
+            "interpretation": "Mały efekt",
+            "percent_variance": 3.5785393908137406
+          },
+          "identity": {
+            "eta_squared": 0.5633175488771158,
+            "interpretation": "Duży efekt",
+            "percent_variance": 56.33175488771158
+          },
+          "strength": {
+            "eta_squared": 0.07606545079469272,
+            "interpretation": "Średni efekt",
+            "percent_variance": 7.606545079469272
+          },
+          "language:identity": {
+            "eta_squared": 0.0421366840139403,
+            "interpretation": "Mały efekt",
+            "percent_variance": 4.21366840139403
+          },
+          "language:strength": {
+            "eta_squared": 0.00045009142482067035,
+            "interpretation": "Znikomy efekt",
+            "percent_variance": 0.045009142482067034
+          },
+          "identity:strength": {
+            "eta_squared": 0.15196211730507758,
+            "interpretation": "Duży efekt",
+            "percent_variance": 15.196211730507759
+          },
+          "language:identity:strength": {
+            "eta_squared": 0.005332333130167094,
+            "interpretation": "Znikomy efekt",
+            "percent_variance": 0.5332333130167094
+          },
+          "Residual": {
+            "eta_squared": 0.12495038054604841,
+            "interpretation": "Średni efekt",
+            "percent_variance": 12.49503805460484
+          }
+        },
+        "interpretation_warning": "UWAGA: Wartości p nie mogą być interpretowane standardowo, ponieważ wszystkie obserwacje pochodzą od jednego modelu AI. Eta-kwadrat służy jedynie jako miara deskryptywna wielkości efektu.",
+        "identity_dominance": {
+          "eta_squared": 0.5633175488771158,
+          "percent_variance": 56.33175488771158,
+          "dominates_model": false,
+          "interpretation": "Tożsamość wyjaśnia 56.3% całkowitej wariancji"
+        }
+      },
+      "interdependent_score": {
+        "model_summary": {
+          "r_squared": 0.8230004732607666,
+          "adj_r_squared": 0.7815162091812589,
+          "f_statistic": 19.838859180035648,
+          "p_value": 1.675766411547914e-18
+        },
+        "anova_table": {
+          "language": {
+            "sum_sq": 0.03200000000000166,
+            "df": 1,
+            "f": 0.6160427807486949,
+            "p": 0.43541743230166674,
+            "eta_squared": 0.0017037387600568788,
+            "percent_variance_explained": 0.17037387600568787
+          },
+          "identity": {
+            "sum_sq": 11.062666666666665,
+            "df": 3,
+            "f": 70.99037433155078,
+            "p": 2.4821608675845935e-20,
+            "eta_squared": 0.5889966871746328,
+            "percent_variance_explained": 58.899668717463285
+          },
+          "strength": {
+            "sum_sq": 0.20000000000000034,
+            "df": 1,
+            "f": 3.8502673796791504,
+            "p": 0.054089249928098625,
+            "eta_squared": 0.01064836725035496,
+            "percent_variance_explained": 1.064836725035496
+          },
+          "language:identity": {
+            "sum_sq": 1.3462222222222266,
+            "df": 3,
+            "f": 8.638859180035677,
+            "p": 6.76484991364562e-05,
+            "eta_squared": 0.07167534311405604,
+            "percent_variance_explained": 7.167534311405604
+          },
+          "language:strength": {
+            "sum_sq": 0.043555555555555354,
+            "df": 1,
+            "f": 0.8385026737967874,
+            "p": 0.36326282140033017,
+            "eta_squared": 0.0023189777567439542,
+            "percent_variance_explained": 0.23189777567439543
+          },
+          "identity:strength": {
+            "sum_sq": 2.6875555555555573,
+            "df": 3,
+            "f": 17.246345811051704,
+            "p": 2.567826747273032e-08,
+            "eta_squared": 0.14309039280643637,
+            "percent_variance_explained": 14.309039280643637
+          },
+          "language:identity:strength": {
+            "sum_sq": 0.08577777777777774,
+            "df": 3,
+            "f": 0.5504456327985737,
+            "p": 0.6496750176954815,
+            "eta_squared": 0.004566966398485562,
+            "percent_variance_explained": 0.4566966398485562
+          },
+          "Residual": {
+            "sum_sq": 3.324444444444445,
+            "df": 64,
+            "f": null,
+            "p": null,
+            "eta_squared": 0.17699952673923328,
+            "percent_variance_explained": 17.699952673923327
+          }
+        },
+        "effect_sizes": {
+          "language": {
+            "eta_squared": 0.0017037387600568788,
+            "interpretation": "Znikomy efekt",
+            "percent_variance": 0.17037387600568787
+          },
+          "identity": {
+            "eta_squared": 0.5889966871746328,
+            "interpretation": "Duży efekt",
+            "percent_variance": 58.899668717463285
+          },
+          "strength": {
+            "eta_squared": 0.01064836725035496,
+            "interpretation": "Mały efekt",
+            "percent_variance": 1.064836725035496
+          },
+          "language:identity": {
+            "eta_squared": 0.07167534311405604,
+            "interpretation": "Średni efekt",
+            "percent_variance": 7.167534311405604
+          },
+          "language:strength": {
+            "eta_squared": 0.0023189777567439542,
+            "interpretation": "Znikomy efekt",
+            "percent_variance": 0.23189777567439543
+          },
+          "identity:strength": {
+            "eta_squared": 0.14309039280643637,
+            "interpretation": "Duży efekt",
+            "percent_variance": 14.309039280643637
+          },
+          "language:identity:strength": {
+            "eta_squared": 0.004566966398485562,
+            "interpretation": "Znikomy efekt",
+            "percent_variance": 0.4566966398485562
+          },
+          "Residual": {
+            "eta_squared": 0.17699952673923328,
+            "interpretation": "Duży efekt",
+            "percent_variance": 17.699952673923327
+          }
+        },
+        "interpretation_warning": "UWAGA: Wartości p nie mogą być interpretowane standardowo, ponieważ wszystkie obserwacje pochodzą od jednego modelu AI. Eta-kwadrat służy jedynie jako miara deskryptywna wielkości efektu.",
+        "identity_dominance": {
+          "eta_squared": 0.5889966871746328,
+          "percent_variance": 58.899668717463285,
+          "dominates_model": false,
+          "interpretation": "Tożsamość wyjaśnia 58.9% całkowitej wariancji"
+        }
+      }
+    },
+    "bootstrap_distance_analysis": {
+      "hypothesis_H1": "W warunkach neutralnych model domyślnie przyjmuje profil amerykański",
+      "method": "Bootstrap analysis of cultural distances",
+      "bootstrap_iterations": 10000,
+      "independent_score_1D": {
+        "polski_weak": {
+          "means": {
+            "neutral": 5.386666666666667,
+            "american": 5.360000000000001,
+            "polish": 4.973333333333334,
+            "japanese": 4.986666666666666
+          },
+          "distances": {
+            "neutral_to_american": 0.026666666666665506,
+            "neutral_to_polish": 0.4133333333333331,
+            "neutral_to_japanese": 0.40000000000000036
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 0.28371466666666695,
+              "ci_95": [
+                -0.05333333333333279,
+                0.586666666666666
+              ],
+              "significant": false,
+              "interpretation": "Brak istotnej różnicy"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 0.2701453333333334,
+              "ci_95": [
+                -0.0933333333333346,
+                0.626666666666666
+              ],
+              "significant": false,
+              "interpretation": "Brak istotnej różnicy"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": false
+        },
+        "angielski_weak": {
+          "means": {
+            "neutral": 5.493333333333333,
+            "american": 5.253333333333333,
+            "polish": 4.333333333333334,
+            "japanese": 4.359999999999999
+          },
+          "distances": {
+            "neutral_to_american": 0.2400000000000002,
+            "neutral_to_polish": 1.1599999999999993,
+            "neutral_to_japanese": 1.1333333333333337
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 0.9158413333333334,
+              "ci_95": [
+                0.40000000000000036,
+                1.3466666666666662
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż polski"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 0.8947706666666667,
+              "ci_95": [
+                0.6000000000000005,
+                1.1733333333333347
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż japoński"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": true
+        },
+        "polski_strong": {
+          "means": {
+            "neutral": 5.413333333333333,
+            "american": 5.653333333333333,
+            "polish": 4.266666666666667,
+            "japanese": 3.453333333333333
+          },
+          "distances": {
+            "neutral_to_american": 0.2400000000000002,
+            "neutral_to_polish": 1.1466666666666665,
+            "neutral_to_japanese": 1.96
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 0.9013479999999998,
+              "ci_95": [
+                0.23999999999999932,
+                1.5066666666666668
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż polski"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 1.714725333333333,
+              "ci_95": [
+                1.253333333333333,
+                2.213333333333332
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż japoński"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": true
+        },
+        "angielski_strong": {
+          "means": {
+            "neutral": 5.36,
+            "american": 5.76,
+            "polish": 3.1333333333333337,
+            "japanese": 2.9466666666666668
+          },
+          "distances": {
+            "neutral_to_american": 0.39999999999999947,
+            "neutral_to_polish": 2.2266666666666666,
+            "neutral_to_japanese": 2.4133333333333336
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 1.8272359999999994,
+              "ci_95": [
+                1.1866666666666674,
+                2.4799999999999986
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż polski"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 2.0134079999999996,
+              "ci_95": [
+                1.3733333333333322,
+                2.746666666666666
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż japoński"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": true
+        }
+      },
+      "interdependent_score_1D": {
+        "polski_weak": {
+          "means": {
+            "neutral": 5.159999999999999,
+            "american": 5.159999999999999,
+            "polish": 4.973333333333334,
+            "japanese": 5.933333333333334
+          },
+          "distances": {
+            "neutral_to_american": 0.0,
+            "neutral_to_polish": 0.18666666666666565,
+            "neutral_to_japanese": 0.7733333333333343
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 0.13082666666666656,
+              "ci_95": [
+                -0.10666666666666647,
+                0.42666666666666675
+              ],
+              "significant": false,
+              "interpretation": "Brak istotnej różnicy"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 0.7071186666666668,
+              "ci_95": [
+                0.4800000000000004,
+                0.9066666666666663
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż japoński"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": true
+        },
+        "angielski_weak": {
+          "means": {
+            "neutral": 5.213333333333333,
+            "american": 4.96,
+            "polish": 5.506666666666666,
+            "japanese": 5.8933333333333335
+          },
+          "distances": {
+            "neutral_to_american": 0.25333333333333297,
+            "neutral_to_polish": 0.293333333333333,
+            "neutral_to_japanese": 0.6800000000000006
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 0.0367186666666674,
+              "ci_95": [
+                -0.2933333333333321,
+                0.3866666666666667
+              ],
+              "significant": false,
+              "interpretation": "Brak istotnej różnicy"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 0.42584666666666743,
+              "ci_95": [
+                0.120000000000001,
+                0.746666666666667
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż japoński"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": true
+        },
+        "polski_strong": {
+          "means": {
+            "neutral": 5.2,
+            "american": 4.973333333333334,
+            "polish": 5.76,
+            "japanese": 5.880000000000001
+          },
+          "distances": {
+            "neutral_to_american": 0.22666666666666657,
+            "neutral_to_polish": 0.5599999999999996,
+            "neutral_to_japanese": 0.6800000000000006
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 0.3230866666666663,
+              "ci_95": [
+                -0.25333333333333474,
+                0.8266666666666653
+              ],
+              "significant": false,
+              "interpretation": "Brak istotnej różnicy"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 0.4425199999999998,
+              "ci_95": [
+                -0.13333333333333375,
+                0.9066666666666672
+              ],
+              "significant": false,
+              "interpretation": "Brak istotnej różnicy"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": false
+        },
+        "angielski_strong": {
+          "means": {
+            "neutral": 4.96,
+            "american": 4.760000000000001,
+            "polish": 6.173333333333334,
+            "japanese": 5.8933333333333335
+          },
+          "distances": {
+            "neutral_to_american": 0.1999999999999993,
+            "neutral_to_polish": 1.2133333333333338,
+            "neutral_to_japanese": 0.9333333333333336
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 1.0021760000000002,
+              "ci_95": [
+                0.45333333333333403,
+                1.373333333333334
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż polski"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 0.7237239999999999,
+              "ci_95": [
+                0.16000000000000014,
+                1.1466666666666674
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż japoński"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": true
+        }
+      },
+      "euclidean_2D": {
+        "polski_weak": {
+          "distances": {
+            "neutral_to_american": 0.026666666666665506,
+            "neutral_to_polish": 0.45352936937853133,
+            "neutral_to_japanese": 0.8706574782567748
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 0.30987967099925834,
+              "ci_95": [
+                -0.048040457155233016,
+                0.6709923418830298
+              ],
+              "significant": false,
+              "interpretation": "Brak istotnej różnicy"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 0.7182600334028977,
+              "ci_95": [
+                0.38122198156552206,
+                1.046804793752755
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż japoński"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": true
+        },
+        "angielski_weak": {
+          "distances": {
+            "neutral_to_american": 0.34896672875473056,
+            "neutral_to_polish": 1.1965134535158568,
+            "neutral_to_japanese": 1.3216824294982688
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 0.841280304934227,
+              "ci_95": [
+                0.4098592351555839,
+                1.2546481380261734
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż polski"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 0.9622627613395147,
+              "ci_95": [
+                0.6986814020013096,
+                1.2490936347612194
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż japoński"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": true
+        },
+        "polski_strong": {
+          "distances": {
+            "neutral_to_american": 0.330117824083732,
+            "neutral_to_polish": 1.276105185493909,
+            "neutral_to_japanese": 2.0746083967823905
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 0.9271758107879307,
+              "ci_95": [
+                0.42195571416562244,
+                1.3934972958284866
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż polski"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 1.7106231295269427,
+              "ci_95": [
+                1.2867993963518995,
+                2.112591187853269
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż japoński"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": true
+        },
+        "angielski_strong": {
+          "distances": {
+            "neutral_to_american": 0.44721359549995715,
+            "neutral_to_polish": 2.535788284187429,
+            "neutral_to_japanese": 2.587525630576225
+          },
+          "closest_culture": "amerykanska",
+          "bootstrap_results": {
+            "polish_minus_american": {
+              "mean_difference": 2.067751249170139,
+              "ci_95": [
+                1.5376029521421624,
+                2.651622694463498
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż polski"
+            },
+            "japanese_minus_american": {
+              "mean_difference": 2.1154974535387536,
+              "ci_95": [
+                1.5355242919876435,
+                2.7922698070860528
+              ],
+              "significant": true,
+              "interpretation": "Amerykański bliższy niż japoński"
+            }
+          },
+          "anglocentrism_present": true,
+          "anglocentrism_statistically_significant": true
+        }
+      },
+      "overall_test": {
+        "h1_confirmed": true,
+        "proportion_confirming_h1": 0.8333333333333334,
+        "total_conditions_tested": 12,
+        "conditions_confirming_h1": 10,
+        "interpretation": "H1 potwierdzona"
+      }
+    },
+    "visualization_and_classification": {
+      "hypothesis_H2": "Po narzuceniu tożsamości model przyjmuje skrajny, stereotypowy wariant",
+      "visualization": {
+        "scatterplot_path": "wyniki_zintegrowane/gpt-3.5-turbo/cultural_space_scatterplot.png",
+        "boxplot_path": "wyniki_zintegrowane/gpt-3.5-turbo/cultural_profiles_boxplot.png",
+        "pca_path": "wyniki_zintegrowane/gpt-3.5-turbo/cultural_space_pca.png",
+        "heatmap_path": "wyniki_zintegrowane/gpt-3.5-turbo/cultural_distances_heatmap.png",
+        "pca_variance_explained": [
+          0.4258310025268716,
+          0.08585069877756557
+        ],
+        "interpretation": "Wizualizacje pokazują karykaturalne profile - każda kultura tworzy zwartą, odrębną grupę"
+      },
+      "classification": {
+        "method": "k-Nearest Neighbors (k=3)",
+        "features": "Odpowiedzi na 30 pytań kwestionariusza",
+        "accuracy_loocv": 0.625,
+        "accuracy_percentage": 62.5,
+        "caricature_profiles_confirmed": false,
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            3,
+            1
+          ],
+          [
+            2,
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            16,
+            0
+          ],
+          [
+            2,
+            7,
+            1,
+            10
+          ]
+        ],
+        "classification_report": {
+          "amerykanska": {
+            "precision": 0.6666666666666666,
+            "recall": 0.8,
+            "f1-score": 0.7272727272727273,
+            "support": 20.0
+          },
+          "japonska": {
+            "precision": 0.72,
+            "recall": 0.9,
+            "f1-score": 0.8,
+            "support": 20.0
+          },
+          "neutralna": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1-score": 0.8,
+            "support": 20.0
+          },
+          "polska": {
+            "precision": 0.9090909090909091,
+            "recall": 0.5,
+            "f1-score": 0.6451612903225806,
+            "support": 20.0
+          },
+          "accuracy": 0.75,
+          "macro avg": {
+            "precision": 0.7739393939393939,
+            "recall": 0.75,
+            "f1-score": 0.7431085043988269,
+            "support": 80.0
+          },
+          "weighted avg": {
+            "precision": 0.7739393939393939,
+            "recall": 0.75,
+            "f1-score": 0.743108504398827,
+            "support": 80.0
+          }
+        },
+        "interpretation": "Dokładność 62.5% nie potwierdza hipotezę o karykaturalnych profilach (próg: 90%)",
+        "most_discriminative_questions": [
+          {
+            "question": "q15",
+            "importance": 0.070071744560729,
+            "rank": 1
+          },
+          {
+            "question": "q7",
+            "importance": 0.06207303617153382,
+            "rank": 2
+          },
+          {
+            "question": "q5",
+            "importance": 0.06005945412416303,
+            "rank": 3
+          },
+          {
+            "question": "q1",
+            "importance": 0.05943597803738149,
+            "rank": 4
+          },
+          {
+            "question": "q26",
+            "importance": 0.059396260590289435,
+            "rank": 5
+          },
+          {
+            "question": "q19",
+            "importance": 0.05467587116981262,
+            "rank": 6
+          },
+          {
+            "question": "q24",
+            "importance": 0.053549604892397414,
+            "rank": 7
+          },
+          {
+            "question": "q3",
+            "importance": 0.03896081301416742,
+            "rank": 8
+          },
+          {
+            "question": "q13",
+            "importance": 0.03874960740773717,
+            "rank": 9
+          },
+          {
+            "question": "q29",
+            "importance": 0.03737082092362839,
+            "rank": 10
+          }
+        ],
+        "confusion_matrix_plot": "wyniki_zintegrowane/gpt-3.5-turbo/confusion_matrix.png"
+      },
+      "threshold_for_caricature": 90.0,
+      "cultural_separation": {
+        "mean_positions": {
+          "amerykanska": {
+            "independent": 5.506666666666666,
+            "interdependent": 4.963333333333333,
+            "n": 20
+          },
+          "polska": {
+            "independent": 4.176666666666667,
+            "interdependent": 5.603333333333334,
+            "n": 20
+          },
+          "neutralna": {
+            "independent": 5.413333333333333,
+            "interdependent": 5.133333333333334,
+            "n": 20
+          },
+          "japonska": {
+            "independent": 3.936666666666665,
+            "interdependent": 5.9,
+            "n": 20
+          }
+        },
+        "pairwise_distances": {
+          "amerykanska-polska": 1.4759742545180115,
+          "amerykanska-neutralna": 0.19393584277051854,
+          "amerykanska-japonska": 1.8281806378048227,
+          "polska-neutralna": 1.3229680436217817,
+          "polska-japonska": 0.381590239800642,
+          "neutralna-japonska": 1.663827581879272
+        },
+        "within_group_variance": {
+          "amerykanska": {
+            "independent_var": 0.0932865497076023,
+            "interdependent_var": 0.05402339181286552,
+            "total_var": 0.14730994152046784
+          },
+          "polska": {
+            "independent_var": 0.6836374269005846,
+            "interdependent_var": 0.25519298245614036,
+            "total_var": 0.938830409356725
+          },
+          "neutralna": {
+            "independent_var": 0.056888888888888815,
+            "interdependent_var": 0.0626900584795322,
+            "total_var": 0.119578947368421
+          },
+          "japonska": {
+            "independent_var": 0.8002222222222222,
+            "interdependent_var": 0.034385964912280735,
+            "total_var": 0.8346081871345029
+          }
+        },
+        "between_group_variance": 0,
+        "separation_index": 2.2435864339087734,
+        "interpretation": "Wysoki indeks separacji (stosunek odległości międzygrupowej do wariancji wewnątrzgrupowej) = 2.24 potwierdza karykaturalne, odrębne profile"
+      }
+    }
+  },
+  "summary": {
+    "H1_anglocentrism": {
+      "1D_analysis": {
+        "independent": {
+          "confirmations": 3,
+          "total": 4,
+          "proportion": 0.75
+        },
+        "interdependent": {
+          "confirmations": 3,
+          "total": 4,
+          "proportion": 0.75
+        }
+      },
+      "2D_analysis": {
+        "confirmations": 4,
+        "total": 4,
+        "proportion": 1.0
+      },
+      "combined": {
+        "confirmed": true,
+        "evidence_strength": 0.8333333333333334,
+        "interpretation": "H1 potwierdzona"
+      }
+    },
+    "H2_caricature_profiles": {
+      "confirmed": false,
+      "classification_accuracy": 62.5,
+      "interpretation": "Dokładność 62.5% nie potwierdza hipotezę o karykaturalnych profilach (próg: 90%)",
+      "threshold": 90.0,
+      "identity_effect_sizes": [
+        {
+          "construct": "independent_score",
+          "variance_explained": 56.33175488771158,
+          "dominates": false
+        },
+        {
+          "construct": "interdependent_score",
+          "variance_explained": 58.899668717463285,
+          "dominates": false
+        }
+      ]
+    },
+    "overall_conclusions": [
+      "Hipoteza H1 została potwierdzona: Model wykazuje anglocentryzm w warunkach neutralnych."
+    ]
+  }
+}
