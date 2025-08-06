@@ -31,7 +31,7 @@ load_dotenv()
 # Experiment parameters
 PROMPTS_FILE = "integrated_prompts.json"
 QUESTIONNAIRES_FILE = "questionnaires.json"
-BASE_OUTPUT_DIR = "wyniki_zintegrowane_eng"
+BASE_OUTPUT_DIR = "results"
 REPEATS_PER_CONDITION = 2
 INDEPENDENT_QUESTIONS = [1, 3, 5, 7, 9, 10, 13, 15, 18, 20, 22, 24, 25, 27, 29]
 INTERDEPENDENT_QUESTIONS = [2, 4, 6, 8, 11, 12, 14, 16, 17, 19, 21, 23, 26, 28, 30]
